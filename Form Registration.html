@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <title>Form Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scriptform.js"></script>
+</html>
+<body>
+  <div class="border">
+    <div class="header">
+        <h1><i>Student Registration Form</i></h1>
+    </div>
+    <div class="form">
+        <form name="formPendaftaran" action="daftar.php" method="post" onsubmit="return validateForm()">
+            <label for="nama">Name :</label>
+            <br />  
+            <input type="text" name="nama" placeholder="Full Name">
+            <br />
+            <label for="nrp">NRP :</label>
+            <br />
+            <input type="text" name="nrp" placeholder="EX : 5025221100">
+            <br />
+            <label for="email">Email  :</label>  
+            <br />
+            <input type="text" name="email" placeholder="Email">
+            <br />
+            <label for="gender">Gender :</label>
+            <br />
+            <select id="gender" name="gender">
+              <option value="">Select your Gender</option>
+              <option value="0">Man</option>
+              <option value="1">Woman</option>
+            </select>
+            <label for="jurusan">Major :</label> 
+            <br />
+            <select id="jurusan" name="jurusan">
+              <option value="">Select your Major</option>
+              <option value="0">Teknik Informatika</option>
+              <option value="1">Teknik Mesin</option>
+              <option value="2">Teknik Elektro</option>
+              <option value="3">Teknik Perkapalan</option>
+              <option value="4">Teknik Industri</option>
+            </select>
+            <br />
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+  </div>
+</body>
+</html>
